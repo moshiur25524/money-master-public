@@ -26,8 +26,8 @@
                         <!-- Income Input -->
                         <div>
                             Income : <div class="input-group mb-3">
-                                <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default">
+                                <input id="income-value" type="text" class="form-control"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                             </div>
                         </div>
                     </div>
@@ -58,8 +58,8 @@
                     <button id="calculation-btn" type="button" class="btn btn-primary">Calculate</button>
 
                     <!-- Total Expence and Balance -->
-                    <h3 class="text-center">Total Expences: 00</h3>
-                    <h3 class="text-center">Balance: 00</h3>
+                    <h3 class="text-center">Total Expences: <span id="expence-total">00</span></h3>
+                    <h3 class="text-center">Balance: <span id="rest-balance">00</span></h3>
                     <div>
                         <div class="d-flex justify-content-center">
                             <!-- Saving percentage -->
@@ -70,13 +70,14 @@
                             <div> <button type="button" class="btn btn-primary">save</button></div>
                         </div>
                     </div>
-                    <!-- Saving Balace and remaing Balance -->
+                    <!-- Saving Balace and remaining Balance -->
                     <h3 class="text-center">Saving Amount: 00</h3>
                     <h3 class="text-center">Remaining Balance: 00</h3>
                 </div>
         </section>
     </main>
     <footer></footer>
+    <script src="finance.js"></script>
 
 </body>
 
