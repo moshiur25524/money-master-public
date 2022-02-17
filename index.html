@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1 class="text-center text-warning">Personal Finance</h1>
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img src="images/sharon-mccutcheon-8lnbXtxFGZw-unsplash.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div>
+                        <h3 class="text-center">Income</h3>
+                        <!-- Income Input -->
+                        <div>
+                            Income : <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-center">Expences</h3>
+                        <!-- Expence List -->
+                        <div>
+                            Food : <div class="input-group mb-3">
+                                <input id="food-cost" type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <div>
+                            Rent : <div class="input-group mb-3">
+                                <input id="rent-cost" type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                        <div>
+                            Clothes : <div class="input-group mb-3">
+                                <input id="cloth-cost" type="text" class="form-control"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Calculate button -->
+                    <button id="calculation-btn" type="button" class="btn btn-primary">Calculate</button>
+
+                    <!-- Total Expence and Balance -->
+                    <h3 class="text-center">Total Expences: 00</h3>
+                    <h3 class="text-center">Balance: 00</h3>
+                    <div>
+                        <div class="d-flex justify-content-center">
+                            <!-- Saving percentage -->
+                            <div class="fs-4 mx-auto">save:</div>
+                            <div> <input type="text" class="form-control" aria-label="Sizing example input"
+                                    aria-describedby="inputGroup-sizing-default"></div>
+                            <div class="mx-auto">%</div>
+                            <div> <button type="button" class="btn btn-primary">save</button></div>
+                        </div>
+                    </div>
+                    <!-- Saving Balace and remaing Balance -->
+                    <h3 class="text-center">Saving Amount: 00</h3>
+                    <h3 class="text-center">Remaining Balance: 00</h3>
+                </div>
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
