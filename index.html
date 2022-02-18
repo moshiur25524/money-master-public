@@ -65,15 +65,16 @@
                         <div class="d-flex justify-content-center">
                             <!-- Saving percentage -->
                             <div class="fs-4 mx-auto">save:</div>
-                            <div> <input type="text" class="form-control" aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"></div>
+                            <div> <input id="percantage-field" type="text" class="form-control"
+                                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            </div>
                             <div class="mx-auto">%</div>
-                            <div> <button type="button" class="btn btn-primary">save</button></div>
+                            <div> <button id="saving-btn" type="button" class="btn btn-primary">save</button></div>
                         </div>
                     </div>
                     <!-- Saving Balace and remaining Balance -->
-                    <h3 class="text-center">Saving Amount: 00</h3>
-                    <h3 class="text-center">Remaining Balance: 00</h3>
+                    <h3 class="text-center">Saving Amount: <span id="saving-balance">00</span></h3>
+                    <h3 class="text-center">Remaining Balance: <span id="">00</span></h3>
                 </div>
         </section>
     </main>

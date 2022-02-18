@@ -38,11 +38,11 @@ document.getElementById('calculation-btn').addEventListener('click', function ()
     const restTotalAmount = incomeFieldAmount - expenceTotalAmount;
     restTotal.innerText = restTotalAmount;
 
-    if (restTotalAmount > incomeFieldAmount) {
+    if (expenceTotalAmount > incomeFieldAmount) {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'You cannot withdraw more than your account balance!',
+            text: 'Your income should be greater than expence!',
             footer: '<a href="">Why do I have this issue?</a>'
         })
     }
@@ -56,3 +56,27 @@ document.getElementById('calculation-btn').addEventListener('click', function ()
 
 })
 
+// saving percantage adding
+
+function percantageCalculation(savingAmount) {
+    const incomeField = document.getElementById('income-value');
+    const incomeFieldAmountText = incomeField.value;
+    const incomeFieldAmount = parseFloat(incomeFieldAmountText);
+
+    const TotalSavingAmount = (incomeFieldAmount * savingAmount) / 100;
+    return TotalSavingAmount;
+}
+
+document.getElementById('saving-btn').addEventListener('click', function () {
+
+    const percentageField = document.getElementById('percantage-field');
+    const savingAmountText = percentageField.value;
+    const savingAmount = parseFloat(savingAmountText);
+
+    const savingBalance = document.getElementById('saving-balance');
+    const savingBalanceTotal = percantageCalculation(savingAmount);
+    savingBalance.innerText = savingBalanceTotal;
+
+    percentageField.value = '';
+
+})
